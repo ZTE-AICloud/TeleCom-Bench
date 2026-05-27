@@ -36,3 +36,5 @@ TeleCom-Bench consists of 12 tasks categorized into two main levels.
 | **Total** | | | | **22,678** |
 
 > **Note on Data Availability:** To prevent evaluation dataset leakage and ensure benchmark integrity, this repository releases **all evaluation code** but only **a subset of the benchmark datasets** as examples.
+>
+> 
