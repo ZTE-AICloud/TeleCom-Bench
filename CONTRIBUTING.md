@@ -1,6 +1,8 @@
 # Contributing to TeleCom-Bench
+
 Thank you for your interest in TeleCom-Bench! We welcome all forms of contributions, including but not limited to: adding new evaluation tasks, improving evaluation code, supplementing datasets, fixing bugs, and enhancing documentation. This document guides you through the contribution workflow based on the current code layout.
 For a quick-start guide to running an existing evaluation, see [`code/docs/get_started.md`](./code/docs/get_started.md).
+
 ---
 ## Quick Start
 ### 1. Clone and Install
@@ -20,6 +22,7 @@ python -c "from opencompass import __version__; print(__version__)"
 # Output: 0.2.0
 ```
 Core dependencies include: `datasets`, `numpy`, `openai`, `transformers`, `httpx`, `jieba`, `rouge_score`, `sacrebleu`, `scipy`, `mmengine`, `nltk==3.8`, etc. (full list in `code/requirements/requirements.txt`).
+
 ### 2. Run an Example Evaluation
 Two ready-to-run templates are provided under `code/examples/`:
 ```bash
@@ -28,12 +31,14 @@ python run.py examples/CoreNetwork.py        # subjective QA on core-network pro
 python run.py examples/BasicKnowledge.py     # multi-choice basic theory
 ```
 You can also pass dataset/model overrides on the command line (see `run.py --help`).
+
 ### 3. Code Style
 This project uses Flake8 for code style checking. The configuration is in the root `.flake8` file (line width 120):
 ```bash
 flake8 --config .flake8 code/
 ```
 ---
+
 ## Code Structure Overview
 ```
 TeleCom-Bench-master/
